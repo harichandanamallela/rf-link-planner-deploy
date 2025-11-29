@@ -33,7 +33,8 @@ const map = L.map('map', {
 // Add Dark Tiles (using CartoDB Dark Matter for a better base, but standard OSM with CSS filter is also fine. Let's use standard OSM and rely on CSS filter)
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
   maxZoom: 19,
-  attribution: '© OpenStreetMap'
+  attribution: '© OpenStreetMap',
+  noWrap: true
 }).addTo(map);
 
 // Custom Zoom Control
